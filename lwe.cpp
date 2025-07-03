@@ -4,10 +4,10 @@
 #include <cmath>
 #include <cassert>
 
-constexpr int n = 512;           // Security parameter
-constexpr int q = 12289;         // Large prime modulus
-constexpr int p = 4;             // Message space {0,1,2,3}
-constexpr int delta = q / p;     // Scaling factor for encoding
+constexpr int n = 512;           // security parameter
+constexpr int q = 12289;         // large prime modulus
+constexpr int p = 4;             // message space {0,1,2,3}
+constexpr int delta = q / p;     // scaling factor for encoding
 
 // noise sampling
 int sample_discrete_gaussian(std::mt19937& gen, double sigma = 3.2) {
